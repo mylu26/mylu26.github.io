@@ -19,7 +19,7 @@ export default class HomePage extends React.Component {
     render() {
         return (
             <div className="App" style={this.styles.div}>
-                <HeaderComponent pages={['Nossa história', 'Fotos', 'Localização']} />
+                <HeaderComponent />
                 <CarouselComponent src={'https://picsum.photos/200'} />
                 {/* <VideoComponent /> */}
                 <SectionComponent>
