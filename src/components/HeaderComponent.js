@@ -39,7 +39,7 @@ export default class HeaderComponent extends React.Component {
                 />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Link to={'/history'}>
+                        <Link to={'/'}>
                             <p style={this.styles.linkColor}>Nossa história</p>
                         </Link>
                         <Link to={'/photos'}>
