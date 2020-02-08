@@ -12,8 +12,12 @@ export default class FooterComponent extends React.Component {
     }
 
     render() {
+        const { fixed } = this.props
+        let properties = {}
+        !fixed ? (properties.sticky = 'bottom') : (properties.fixed = 'bottom')
+
         return (
-            <Navbar fixed={'bottom'} style={this.styles.footerBackground}>
+            <Navbar {...properties} style={this.styles.footerBackground}>
                 <Navbar.Brand href="#home" style={this.styles.footer}>
                     Mylena & Lucas
                 </Navbar.Brand>
