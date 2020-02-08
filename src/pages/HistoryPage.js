@@ -15,8 +15,8 @@ export default class HistoryPage extends React.Component {
             height: 400
         },
         image1: {
-            width: '110%',
-            margin: 50
+            width: '80%',
+            marginTop: 10
         }
     }
     render() {
