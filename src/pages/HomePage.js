@@ -14,7 +14,6 @@ export default class HomePage extends React.Component {
         div: {
             color: '#fff',
             backgroundColor: '#000000',
-            width: '100%',
             height: window.outerHeight
         }
     }

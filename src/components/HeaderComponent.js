@@ -10,14 +10,14 @@ export default class HeaderComponent extends React.Component {
         mylenaLucas: {
             color: '#d6ac20',
             paddingTop: 5,
-            paddingLeft: 10,
-            paddingRight: 10
+            marginLeft: 10,
+            marginRight: 10
         },
         linkColor: {
             color: '#fff',
             paddingTop: 5,
-            paddingLeft: 10,
-            paddingRight: 10
+            marginLeft: 10,
+            marginRight: 10
         },
         toggle: {
             color: 'red',
