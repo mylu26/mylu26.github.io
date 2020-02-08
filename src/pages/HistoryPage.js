@@ -1,5 +1,6 @@
 import React from 'react'
 import { Carousel, Col, Row } from 'react-bootstrap'
+import ContainerComponent from '../components/ContainerComponent'
 
 export default class HistoryPage extends React.Component {
     styles = {

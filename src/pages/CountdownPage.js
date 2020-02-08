@@ -1,5 +1,7 @@
 import React from 'react'
 import { Navbar } from 'react-bootstrap'
+import HeaderComponent from '../components/HeaderComponent'
+import FooterComponent from '../components/FooterComponent'
 
 export default class CountdownPage extends React.Component {
     constructor(props) {
@@ -33,25 +35,36 @@ export default class CountdownPage extends React.Component {
         this.setState({ days, hours, minutes, seconds })
     }
 
+    styles = {
+        div: {
+            marginTop: 300,
+            marginBottom: 100
+        }
+    }
+
     render() {
         let { days, hours, minutes, seconds } = this.state
         return (
             <div>
-                {days === 0 && hours == 0 && minutes === 0 && seconds === 0 ? (
-                    <p>Carregando...</p>
-                ) : (
-                    <div>
-                        <h1>Contagem regressiva</h1>
-                        <span>
-                            <p>
-                                Faltam {days} dias, {hours}:{minutes}:{seconds} para o
-                                nosso casamento
-                            </p>
-                            <hr></hr>
-                            <p>26 de setembro de 2020</p>
-                        </span>
-                    </div>
-                )}
+                <HeaderComponent />
+                <div style={this.styles.div}>
+                    {days === 0 && hours == 0 && minutes === 0 && seconds === 0 ? (
+                        <p>Carregando...</p>
+                    ) : (
+                        <div>
+                            <h1>Contagem regressiva</h1>
+                            <span>
+                                <p>
+                                    Faltam {days} dias, {hours}:{minutes}:{seconds} para o
+                                    nosso casamento
+                                </p>
+                                <hr></hr>
+                                <p>26 de setembro de 2020</p>
+                            </span>
+                        </div>
+                    )}
+                </div>
+                <FooterComponent fixed />
             </div>
         )
     }
