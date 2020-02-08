@@ -5,6 +5,7 @@ import VideoComponent from '../components/VideoComponent'
 import SectionComponent from '../components/SectionComponent'
 import SeparatorComponent from '../components/SeparatorComponent'
 import FooterComponent from '../components/FooterComponent'
+import HistoryPage from './HistoryPage'
 
 import '../App.css'
 
@@ -12,7 +13,7 @@ export default class HomePage extends React.Component {
     styles = {
         div: {
             color: '#fff',
-            backgroundColor: '#000',
+            backgroundColor: '#000000',
             width: '100%',
             height: window.outerHeight
         }
@@ -24,6 +25,7 @@ export default class HomePage extends React.Component {
                 <SeparatorComponent />
                 {/* <CarouselComponent src={'https://picsum.photos/200'} /> */}
                 <VideoComponent />
+                <HistoryPage />
                 <SectionComponent>
                     <h1>S1</h1>
                 </SectionComponent>

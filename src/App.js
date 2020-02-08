@@ -5,7 +5,6 @@ import HistoryPage from '../src/pages/HistoryPage'
 import CountdownPage from '../src/pages/CountdownPage'
 import GaleryPage from '../src/pages/GaleryPage'
 import PageNotFound from '../src/pages/PageNotFound'
-import './App.css'
 
 export default class App extends React.Component {
     render() {

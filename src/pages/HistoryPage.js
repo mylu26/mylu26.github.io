@@ -1,25 +1,26 @@
 import React from 'react'
 import { Carousel, Col, Row } from 'react-bootstrap'
-import HeaderComponent from '../components/HeaderComponent'
-import FooterComponent from '../components/FooterComponent'
 
 export default class HistoryPage extends React.Component {
     styles = {
+        div: {
+            paddingTop: '10%',
+            paddingBottom: '10%',
+            backgroundColor: '#000',
+            color: '#fff'
+        },
         images: {
             width: '100%',
             height: 400
         },
         image1: {
-            // height: 400,
             width: '110%',
             margin: 50
         }
     }
     render() {
         return (
-            <div>
-                <HeaderComponent />
-
+            <div style={this.styles.div} data-from={'History Page'}>
                 <Carousel>
                     <Carousel.Item>
                         <img
@@ -134,7 +135,6 @@ export default class HistoryPage extends React.Component {
                         </p>
                     </Col>
                 </Row>
-                <FooterComponent />
             </div>
         )
     }
