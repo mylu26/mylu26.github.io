@@ -66,7 +66,7 @@ export default class HeaderComponent extends React.Component {
                             <p style={this.styles.linkColor}>Contagem regressiva</p>
                         </Link>
 
-                        <Link to={'/place'}>
+                        <Link to={'/address'}>
                             <p style={this.styles.linkColor}>Como chegar?</p>
                         </Link>
                     </Nav>

@@ -12,9 +12,9 @@ export default class FooterComponent extends React.Component {
     }
 
     render() {
-        const { fixed } = this.props
+        const { fixedBottom } = this.props
         let properties = {}
-        !fixed ? (properties.sticky = 'bottom') : (properties.fixed = 'bottom')
+        !fixedBottom ? (properties.sticky = 'bottom') : (properties.fixed = 'bottom')
 
         return (
             <Navbar {...properties} style={this.styles.footerBackground}>

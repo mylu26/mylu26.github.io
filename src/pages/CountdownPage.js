@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar } from 'react-bootstrap'
-import HeaderComponent from '../components/HeaderComponent'
+import ContainerComponent from '../components/ContainerComponent'
 import FooterComponent from '../components/FooterComponent'
 
 export default class CountdownPage extends React.Component {
@@ -46,25 +46,25 @@ export default class CountdownPage extends React.Component {
         let { days, hours, minutes, seconds } = this.state
         return (
             <div>
-                <HeaderComponent />
-                <div style={this.styles.div}>
-                    {days === 0 && hours == 0 && minutes === 0 && seconds === 0 ? (
-                        <p>Carregando...</p>
-                    ) : (
-                        <div>
-                            <h1>Contagem regressiva</h1>
-                            <span>
-                                <p>
-                                    Faltam {days} dias, {hours}:{minutes}:{seconds} para o
-                                    nosso casamento
-                                </p>
-                                <hr></hr>
-                                <p>26 de setembro de 2020</p>
-                            </span>
-                        </div>
-                    )}
-                </div>
-                <FooterComponent fixed />
+                <ContainerComponent fixedBottom>
+                    <div style={this.styles.div}>
+                        {days === 0 && hours == 0 && minutes === 0 && seconds === 0 ? (
+                            <p>Carregando...</p>
+                        ) : (
+                            <div>
+                                <h1>Contagem regressiva</h1>
+                                <span>
+                                    <p>
+                                        Faltam {days} dias, {hours}:{minutes}:{seconds}{' '}
+                                        para o nosso casamento
+                                    </p>
+                                    <hr></hr>
+                                    <p>26 de setembro de 2020</p>
+                                </span>
+                            </div>
+                        )}
+                    </div>
+                </ContainerComponent>
             </div>
         )
     }
