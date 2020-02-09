@@ -1,5 +1,4 @@
 import React from 'react'
-import { Table } from 'react-bootstrap'
 import ContainerComponent from '../components/ContainerComponent'
 import SeparatorComponent from '../components/SeparatorComponent'
 import TitleComponent from '../components/TitleComponent'

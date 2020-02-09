@@ -1,6 +1,5 @@
 import React from 'react'
-import { Carousel, Col, Row } from 'react-bootstrap'
-import ContainerComponent from '../components/ContainerComponent'
+import { Col, Row } from 'react-bootstrap'
 
 export default class HistoryPage extends React.Component {
     styles = {
@@ -19,7 +18,7 @@ export default class HistoryPage extends React.Component {
             marginTop: 10
         },
         text: {
-            textAlign: 'left',
+            textAlign: 'left'
         }
     }
     render() {
@@ -31,6 +30,7 @@ export default class HistoryPage extends React.Component {
                             <img
                                 src={require('../assets/image/galeria1.jpg')}
                                 style={this.styles.image1}
+                                alt={'Imagem de Mylena e Lucas'}
                             />
                         </Col>
                         <Col md={7}>

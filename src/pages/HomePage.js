@@ -1,5 +1,4 @@
 import React from 'react'
-import CarouselComponent from '../components/CarouselComponent'
 import VideoComponent from '../components/VideoComponent'
 import SectionComponent from '../components/SectionComponent'
 import SeparatorComponent from '../components/SeparatorComponent'
@@ -21,7 +20,6 @@ export default class HomePage extends React.Component {
             <div className="App" style={this.styles.div}>
                 <ContainerComponent>
                     <SeparatorComponent />
-                    {/* <CarouselComponent src={'https://picsum.photos/200'} /> */}
                     <VideoComponent />
                     <HistoryPage />
                     <SectionComponent>
