@@ -81,6 +81,10 @@ export default class CountdownPage extends React.Component {
                 fontSize: 15,
                 fontWeight: 300
             }
+        },
+        textH3: {
+            color: '#fff',
+            fontWeight: 100
         }
     }
 
@@ -100,7 +104,7 @@ export default class CountdownPage extends React.Component {
                                 <p>Carregando...</p>
                             ) : (
                                 <div>
-                                    <h1>Faltam apenas</h1>
+                                    <h3 style={this.styles.textH3}>Faltam apenas</h3>
                                     <div style={this.styles.time.days}>
                                         {days}
                                         <span
@@ -130,7 +134,9 @@ export default class CountdownPage extends React.Component {
                                         </div>
                                     </div>
                                     <SeparatorComponent />
-                                    <h3>para o nosso casamento</h3>
+                                    <h3 style={this.styles.textH3}>
+                                        para o nosso casamento
+                                    </h3>
                                 </div>
                             )}
                         </div>
