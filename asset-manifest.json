@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/site-casamento/static/css/main.b4046080.chunk.css",
-    "main.js": "/site-casamento/static/js/main.fc7cf279.chunk.js",
-    "main.js.map": "/site-casamento/static/js/main.fc7cf279.chunk.js.map",
+    "main.js": "/site-casamento/static/js/main.aa4e6e1c.chunk.js",
+    "main.js.map": "/site-casamento/static/js/main.aa4e6e1c.chunk.js.map",
     "runtime-main.js": "/site-casamento/static/js/runtime-main.716de1d8.js",
     "runtime-main.js.map": "/site-casamento/static/js/runtime-main.716de1d8.js.map",
     "static/css/2.17e5ed98.chunk.css": "/site-casamento/static/css/2.17e5ed98.chunk.css",
     "static/js/2.85c5c6a1.chunk.js": "/site-casamento/static/js/2.85c5c6a1.chunk.js",
     "static/js/2.85c5c6a1.chunk.js.map": "/site-casamento/static/js/2.85c5c6a1.chunk.js.map",
     "index.html": "/site-casamento/index.html",
-    "precache-manifest.5d11fe18eb2ad2bacab151b75353f034.js": "/site-casamento/precache-manifest.5d11fe18eb2ad2bacab151b75353f034.js",
+    "precache-manifest.ed17e73c433d5f606e818ce8d9a8c2ab.js": "/site-casamento/precache-manifest.ed17e73c433d5f606e818ce8d9a8c2ab.js",
     "service-worker.js": "/site-casamento/service-worker.js",
     "static/css/2.17e5ed98.chunk.css.map": "/site-casamento/static/css/2.17e5ed98.chunk.css.map",
     "static/css/main.b4046080.chunk.css.map": "/site-casamento/static/css/main.b4046080.chunk.css.map",
@@ -26,6 +26,6 @@
     "static/css/2.17e5ed98.chunk.css",
     "static/js/2.85c5c6a1.chunk.js",
     "static/css/main.b4046080.chunk.css",
-    "static/js/main.fc7cf279.chunk.js"
+    "static/js/main.aa4e6e1c.chunk.js"
   ]
 }
