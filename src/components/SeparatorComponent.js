@@ -9,7 +9,7 @@ export default class SeparatorComponent extends React.Component {
             marginBottom: 10,
             height: 10,
             width: '100%',
-            backgroundColor: 'red'
+            backgroundColor: 'transparent'
         }
     }
     render() {

@@ -5,9 +5,9 @@ export default class FooterComponent extends React.Component {
     styles = {
         footer: {
             color: '#fff',
-            fontSize: 10,
+            fontSize: 12,
             footerDeveloper: {
-                fontSize: 6,
+                fontSize: 8,
                 color: '#fff'
             }
         },

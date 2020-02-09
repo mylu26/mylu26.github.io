@@ -14,7 +14,7 @@ export default class Container extends React.Component {
             <div>
                 <HeaderComponent />
                 <div style={this.styles.divContainer}>{this.props.children}</div>
-                <FooterComponent fixedBottom />
+                <FooterComponent fixedBottom={fixedBottom} />
             </div>
         )
     }
