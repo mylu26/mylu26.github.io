@@ -4,7 +4,12 @@ import { Navbar } from 'react-bootstrap'
 export default class FooterComponent extends React.Component {
     styles = {
         footer: {
-            color: '#fff'
+            color: '#fff',
+            fontSize: 10,
+            footerDeveloper: {
+                fontSize: 6,
+                color: '#fff'
+            }
         },
         footerBackground: {
             backgroundColor: '#000'
@@ -23,9 +28,9 @@ export default class FooterComponent extends React.Component {
                 </Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
-                    <Navbar.Text style={this.styles.footer}>
+                    <Navbar.Text style={this.styles.footer.footerDeveloper}>
                         Desenvolvido por:{' '}
-                        <a href="#login" style={this.styles.footer}>
+                        <a href="#login" style={this.styles.footer.footerDeveloper}>
                             Lucas Sodré
                         </a>
                     </Navbar.Text>
