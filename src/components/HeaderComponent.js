@@ -29,7 +29,7 @@ export default class HeaderComponent extends React.Component {
         return (
             <Navbar fixed={'top'} collapseOnSelect expand="lg" style={this.styles.navbar}>
                 <Navbar.Brand>
-                    <Link to={'/'}>
+                    <Link to={'/home'}>
                         <p style={this.styles.mylenaLucas}>Mylena & Lucas</p>
                     </Link>
                 </Navbar.Brand>
@@ -39,7 +39,7 @@ export default class HeaderComponent extends React.Component {
                 />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Link to={'/'}>
+                        <Link to={'/home'}>
                             <p style={this.styles.linkColor}>Nossa história</p>
                         </Link>
                         <Link to={'/photos'}>
