@@ -3,6 +3,7 @@ import { Table } from 'react-bootstrap'
 import ContainerComponent from '../components/ContainerComponent'
 import SeparatorComponent from '../components/SeparatorComponent'
 import TitleComponent from '../components/TitleComponent'
+import ImageBackground from '../assets/image/countdownOverlay.jpg'
 
 export default class CountdownPage extends React.Component {
     constructor(props) {
@@ -38,25 +39,55 @@ export default class CountdownPage extends React.Component {
 
     styles = {
         div: {
-            padingLeft: 10,
-            padingRight: 10,
             justifyContent: 'center',
-            textAlign: 'center'
+            textAlign: 'center',
+            divBackground: {
+                height: window.outerHeight,
+                backgroundImage: `url(${ImageBackground})`,
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat'
+            }
         },
-        textDate: {
-            fontSize: 20,
-            fontWeight: 800
+        divTime: {
+            display: 'flex',
+            justifyContent: 'center'
         },
-        textDescription: {
-            fontSize: 17,
-            fontWeight: 500
+        time: {
+            days: {
+                fontSize: 70,
+                fontWeight: 900,
+                color: '#fff',
+                marginBottom: 0,
+                daysDescription: {
+                    fontSize: 20,
+                    fontWeight: 300,
+                    marginBottom: 0
+                }
+            },
+            marginLeft: '1%',
+            marginRight: '1%',
+            width: 100,
+            height: 100,
+            borderRadius: 5,
+            textAlign: 'center',
+            fontSize: 30,
+            fontWeight: 900,
+            backgroundColor: '#fff',
+            opacity: '0.8',
+            alignItems: 'center',
+            justifyContent: 'center',
+            timeDescription: {
+                fontSize: 15,
+                fontWeight: 300
+            }
         }
     }
 
     render() {
         let { days, hours, minutes, seconds } = this.state
         return (
-            <div>
+            <div style={this.styles.div.divBackground}>
                 <ContainerComponent fixedBottom>
                     <div className={'container'}>
                         <TitleComponent>Contagem regressiva</TitleComponent>
@@ -69,44 +100,37 @@ export default class CountdownPage extends React.Component {
                                 <p>Carregando...</p>
                             ) : (
                                 <div>
-                                    <h1>Faltam</h1>
-                                    <Table striped bordered hover borderless>
-                                        <thead>
-                                            <tr>
-                                                <th style={this.styles.textDate}>
-                                                    {days}
-                                                </th>
-                                                <th style={this.styles.textDate}>
-                                                    {hours}
-                                                </th>
-                                                <th style={this.styles.textDate}>
-                                                    {minutes}
-                                                </th>
-                                                <th style={this.styles.textDate}>
-                                                    {seconds}
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td style={this.styles.textDescription}>
-                                                    dias
-                                                </td>
-                                                <td style={this.styles.textDescription}>
-                                                    horas
-                                                </td>
-                                                <td style={this.styles.textDescription}>
-                                                    minutos
-                                                </td>
-                                                <td style={this.styles.textDescription}>
-                                                    segundos
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </Table>
-                                    <h1 style={this.styles.title}>
-                                        para o nosso casamento
-                                    </h1>
+                                    <h1>Faltam apenas</h1>
+                                    <div style={this.styles.time.days}>
+                                        {days}
+                                        <span
+                                            style={this.styles.time.days.daysDescription}
+                                        >
+                                            dias
+                                        </span>
+                                    </div>
+                                    <div style={this.styles.divTime}>
+                                        <div style={this.styles.time}>
+                                            <div>{hours}</div>
+                                            <p style={this.styles.time.timeDescription}>
+                                                horas
+                                            </p>
+                                        </div>
+                                        <div style={this.styles.time}>
+                                            <div>{minutes}</div>
+                                            <p style={this.styles.time.timeDescription}>
+                                                minutos
+                                            </p>
+                                        </div>
+                                        <div style={this.styles.time}>
+                                            <div>{seconds}</div>
+                                            <p style={this.styles.time.timeDescription}>
+                                                segundos
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <SeparatorComponent />
+                                    <h3>para o nosso casamento</h3>
                                 </div>
                             )}
                         </div>

@@ -7,6 +7,6 @@ export default class TitleComponent extends React.Component {
     }
 
     render() {
-        return <h1 style={this.styles}>{this.props.children}</h1>
+        return <h2 style={this.styles}>{this.props.children}</h2>
     }
 }
