@@ -1,0 +1,44 @@
+.footer {
+    background: #f1f1f1;
+    color: '#0000ff';
+
+    .links {
+        ul {
+            list-style-type: none;
+        }
+        li a {
+            color: '#0000ff';
+            transition: color 0.2s;
+            &:hover {
+                text-decoration: none;
+                color: #d6ac20;
+            }
+        }
+    }
+    .about-company {
+        i {
+            font-size: 25px;
+        }
+        a {
+            color: '#0000ff';
+            transition: color 0.2s;
+            &:hover {
+                color: #d6ac20;
+            }
+        }
+    }
+    .location {
+        i {
+            font-size: 18px;
+        }
+    }
+    .copyright p {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .row.mt-5 {
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-top-color: #000;
+        margin: 0;
+    }
+}
