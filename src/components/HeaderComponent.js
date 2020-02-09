@@ -58,7 +58,7 @@ export default class HeaderComponent extends React.Component {
                             <p style={this.styles.linkColor}>Lista de presentes</p>
                         </Link>
 
-                        <Link to={'/sendMessage'}>
+                        <Link to={'/contact'}>
                             <p style={this.styles.linkColor}>Nos envie uma mensagem</p>
                         </Link>
 
