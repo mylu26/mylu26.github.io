@@ -1,5 +1,4 @@
 import React from 'react'
-import { ResponsiveEmbed } from 'react-bootstrap'
 import Video from '../assets/video/mylenalucas_web.webm'
 
 export default class VideoComponent extends React.Component {
@@ -13,9 +12,4 @@ export default class VideoComponent extends React.Component {
             </>
         )
     }
-}
-{
-    /* <ResponsiveEmbed aspectRatio={'21by9'}>
-        <embed type="image/svg+xml" src={Video} />
-    </ResponsiveEmbed> */
 }

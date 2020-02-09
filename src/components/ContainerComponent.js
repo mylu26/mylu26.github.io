@@ -5,7 +5,7 @@ import FooterComponent from './FooterComponent'
 export default class Container extends React.Component {
     styles = {
         divContainer: {
-            marginTop: 75
+            // marginTop: 75
         }
     }
     render() {

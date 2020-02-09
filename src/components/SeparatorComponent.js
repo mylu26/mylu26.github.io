@@ -1,6 +1,4 @@
 import React from 'react'
-import { ResponsiveEmbed } from 'react-bootstrap'
-import Video from '../assets/video/mylenalucas_web.webm'
 
 export default class SeparatorComponent extends React.Component {
     styles = {
@@ -15,9 +13,4 @@ export default class SeparatorComponent extends React.Component {
     render() {
         return <div style={this.styles.div}></div>
     }
-}
-{
-    /* <ResponsiveEmbed aspectRatio={'21by9'}>
-        <embed type="image/svg+xml" src={Video} />
-    </ResponsiveEmbed> */
 }

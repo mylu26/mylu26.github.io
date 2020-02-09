@@ -28,7 +28,7 @@ export default class GaleryOne extends React.Component {
                     <img
                         class="img-fluid"
                         src={require('../../assets/image/galery/foto1.jpg')}
-                        alt="Card image cap"
+                        alt="foto1"
                     />
                 </div>
 
@@ -36,7 +36,7 @@ export default class GaleryOne extends React.Component {
                     <img
                         class="img-fluid"
                         src={require('../../assets/image/galery/foto2.jpg')}
-                        alt="Card image cap"
+                        alt="foto2"
                     />
                 </div>
 
@@ -44,7 +44,7 @@ export default class GaleryOne extends React.Component {
                     <img
                         class="img-fluid"
                         src={require('../../assets/image/galery/foto3.jpg')}
-                        alt="Card image cap"
+                        alt="foto3"
                     />
                 </div>
 
@@ -52,7 +52,7 @@ export default class GaleryOne extends React.Component {
                     <img
                         class="img-fluid"
                         src={require('../../assets/image/galery/foto4.jpg')}
-                        alt="Card image cap"
+                        alt="foto4"
                     />
                 </div>
 
@@ -60,7 +60,7 @@ export default class GaleryOne extends React.Component {
                     <img
                         class="img-fluid"
                         src={require('../../assets/image/galery/foto1.jpg')}
-                        alt="Card image cap"
+                        alt="foto5"
                     />
                 </div>
 
@@ -68,7 +68,7 @@ export default class GaleryOne extends React.Component {
                     <img
                         class="img-fluid"
                         src={require('../../assets/image/galery/foto2.jpg')}
-                        alt="Card image cap"
+                        alt="foto6"
                     />
                 </div>
             </div>

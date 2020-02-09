@@ -1,6 +1,7 @@
 import React from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import MenuToggle from '../assets/image/menu.png'
 
 export default class HeaderComponent extends React.Component {
     styles = {
@@ -20,8 +21,8 @@ export default class HeaderComponent extends React.Component {
             marginRight: 10
         },
         toggle: {
-            color: 'red',
-            backgroundColor: '#d6ac20',
+            backgroundColor: '#transparent',
+            color: '#fff',
             outline: 'none'
         }
     }
@@ -36,7 +37,13 @@ export default class HeaderComponent extends React.Component {
                 <Navbar.Toggle
                     aria-controls="responsive-navbar-nav"
                     style={this.styles.toggle}
-                />
+                >
+                    <img
+                        src={MenuToggle}
+                        style={{ width: 40 }}
+                        alt={'Imagem de aliança sendo o menu'}
+                    />
+                </Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Link to={'/home'}>
@@ -50,6 +57,7 @@ export default class HeaderComponent extends React.Component {
                                 'https://www.casamentos.com.br/web/mylenaelucas/confirmeasuapresenca-3'
                             }
                             target={'_blank'}
+                            rel="noopener noreferrer"
                         >
                             <p style={this.styles.linkColor}>Confirme sua presença</p>
                         </a>
