@@ -2,6 +2,7 @@ import React from 'react'
 import { Form, Col, Row, Button } from 'react-bootstrap'
 import SeparatorComponent from '../components/SeparatorComponent'
 import ContainerComponent from '../components/ContainerComponent'
+import TitleComponent from '../components/TitleComponent'
 
 export default class ContactPage extends React.Component {
     render() {
@@ -9,10 +10,10 @@ export default class ContactPage extends React.Component {
             <div>
                 <ContainerComponent>
                     <div className={'container'}>
+                        <TitleComponent>Nos envie uma mensagem</TitleComponent>
+                        <SeparatorComponent />
                         <Row>
                             <Col>
-                                <h1>CONTATO</h1>
-                                <SeparatorComponent />
                                 <Form.Group>
                                     <Form.Label>
                                         Escreva seu nome, a família ou casal.
@@ -40,7 +41,10 @@ export default class ContactPage extends React.Component {
                                 <Button block>Enviar mensagem</Button>
                             </Col>
                             <Col>
-                                <h1>Entre em contato diretamente conosco</h1>
+                                <SeparatorComponent />
+                                <TitleComponent>
+                                    Entre em contato diretamente conosco
+                                </TitleComponent>
                                 <p>WhatsApp</p>
                             </Col>
                         </Row>

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
 import ContainerComponent from '../components/ContainerComponent'
-import FooterComponent from '../components/FooterComponent'
+import SeparatorComponent from '../components/SeparatorComponent'
+import TitleComponent from '../components/TitleComponent'
 
 export default class CountdownPage extends React.Component {
     constructor(props) {
@@ -37,20 +38,17 @@ export default class CountdownPage extends React.Component {
 
     styles = {
         div: {
-            marginTop: 200,
-            marginBottom: 100,
+            padingLeft: 10,
+            padingRight: 10,
             justifyContent: 'center',
             textAlign: 'center'
         },
-        title: {
-            fontSize: 50
-        },
         textDate: {
-            fontSize: 25,
+            fontSize: 20,
             fontWeight: 800
         },
         textDescription: {
-            fontSize: 20,
+            fontSize: 17,
             fontWeight: 500
         }
     }
@@ -61,6 +59,8 @@ export default class CountdownPage extends React.Component {
             <div>
                 <ContainerComponent fixedBottom>
                     <div className={'container'}>
+                        <TitleComponent>Contagem regressiva</TitleComponent>
+                        <SeparatorComponent />
                         <div style={this.styles.div}>
                             {days === 0 &&
                             hours === 0 &&
@@ -69,7 +69,7 @@ export default class CountdownPage extends React.Component {
                                 <p>Carregando...</p>
                             ) : (
                                 <div>
-                                    <h1 style={this.styles.title}>Faltam</h1>
+                                    <h1>Faltam</h1>
                                     <Table striped bordered hover borderless>
                                         <thead>
                                             <tr>

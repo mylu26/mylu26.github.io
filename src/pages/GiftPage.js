@@ -1,33 +1,51 @@
 import React from 'react'
 import { Table } from 'react-bootstrap'
 import ContainerComponent from '../components/ContainerComponent'
+import TitleComponent from '../components/TitleComponent'
 
 export default class GiftPage extends React.Component {
     render() {
         return (
             <div>
-                <ContainerComponent fixed>
+                <ContainerComponent fixedBottom>
                     <div className={'container'}>
-                        LISTA DE PRESENTES
-                        <Table striped bordered hover borderless>
+                        <TitleComponent>Lista de presente</TitleComponent>
+                        <Table striped hover borderless>
                             <thead>
                                 <tr>
-                                    <th>Loja</th>
-                                    <th>Site</th>
+                                    <th>Ir para loja</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Casas Bahia</td>
-                                    <td>casasbahia.com.br</td>
+                                    <td>
+                                        <a
+                                            target={'_blank'}
+                                            href={'www.casasbahia.com.br'}
+                                        >
+                                            Casas Bahia
+                                        </a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Americanas.com</td>
-                                    <td>https://www.americanas.com.br/</td>
+                                    <td>
+                                        <a
+                                            target={'_blank'}
+                                            href={'https://www.americanas.com.br/'}
+                                        >
+                                            Americanas.com
+                                        </a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>Ponto Frio</td>
-                                    <td>http://pontofrio.com.br/</td>
+                                    <td>
+                                        <a
+                                            target={'_blank'}
+                                            href={'https://pontofrio.com.br/'}
+                                        >
+                                            Ponto Frio
+                                        </a>
+                                    </td>
                                 </tr>
                             </tbody>
                         </Table>

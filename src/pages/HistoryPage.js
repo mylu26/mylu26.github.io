@@ -17,58 +17,14 @@ export default class HistoryPage extends React.Component {
         image1: {
             width: '80%',
             marginTop: 10
+        },
+        text: {
+            textAlign: 'left',
         }
     }
     render() {
         return (
             <div style={this.styles.div} data-from={'History Page'}>
-                <Carousel>
-                    <Carousel.Item>
-                        <img
-                            style={this.styles.images}
-                            className="d-block w-100"
-                            src="https://picsum.photos/200"
-                            alt="First slide"
-                        />
-                        <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>
-                                Nulla vitae elit libero, a pharetra augue mollis interdum.
-                            </p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={this.styles.images}
-                            className="d-block w-100"
-                            src="https://picsum.photos/200"
-                            alt="Third slide"
-                        />
-
-                        <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            </p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img
-                            style={this.styles.images}
-                            className="d-block w-100"
-                            src="https://picsum.photos/200"
-                            alt="Third slide"
-                        />
-
-                        <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>
-                                Praesent commodo cursus magna, vel scelerisque nisl
-                                consectetur.
-                            </p>
-                        </Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
                 <Col>
                     <Row>
                         <Col md={4}>
@@ -78,7 +34,7 @@ export default class HistoryPage extends React.Component {
                             />
                         </Col>
                         <Col md={7}>
-                            <p>
+                            <p style={this.styles.text}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Aliquam consectetur varius mi, a pulvinar odio porta non.
                                 Maecenas nisl lorem, vulputate eu tincidunt vel, ultricies
